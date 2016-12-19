@@ -14,4 +14,6 @@ const result = ReactDOMServer.renderToStaticMarkup(
   React.createElement(PhonesContainer)
 );
 
-console.log(result);
+// console.log(result);
+
+export default result;
