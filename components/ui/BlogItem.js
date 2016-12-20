@@ -8,17 +8,15 @@ class BlogItem extends React.Component {
     const { src, text } = this.props;
     return (DOM.div(
         null,
-        [
-          React.createElement(Image, 
-            { 
-              src: src, 
-              width: '100px', 
-              height: '100px', 
-              alt: 'Image' 
-            } 
-          ),
-          React.createElement(TextBox, { text: text })
-        ]
+        React.createElement(Image, 
+          { 
+            src: src, 
+            width: '100px', 
+            height: '100px', 
+            alt: 'Image' 
+          } 
+        ),
+        React.createElement(TextBox, { text: text })
       )
     )
   } 
